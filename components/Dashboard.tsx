@@ -24,14 +24,19 @@ export default function Dashboard() {
   const [selected, setSelected] = useState<Camera[]>([]);
   const [flyTarget, setFlyTarget] = useState<{ lat: number; lng: number; zoom: number } | null>(null);
   const [showForm, setShowForm] = useState(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   const load = useCallback(async () => {
     setLoading(true);
+    setLoadError(null);
     try {
       const res = await fetch("/api/cameras");
+      if (!res.ok) throw new Error(`API /api/cameras mengembalikan HTTP ${res.status}`);
       const data = await res.json();
-      setCameras(data.cameras);
-      setSources(data.sources);
+      setCameras(data.cameras ?? []);
+      setSources(data.sources ?? []);
+    } catch (err) {
+      setLoadError((err as Error).message);
     } finally {
       setLoading(false);
     }
@@ -113,7 +118,9 @@ export default function Dashboard() {
           ))}
           <div className="list">
             {loading && <div className="empty">Memuat data…</div>}
-            {!loading && filtered.length === 0 && <div className="empty">Tidak ada kamera untuk filter ini.</div>}
+            {loadError && <div className="empty error">Gagal memuat kamera: {loadError}. Cek log terminal server.</div>}
+            {!loading && !loadError && cameras.length === 0 && <div className="empty">Belum ada data kamera. Periksa data/portals.json dan config/sources.json.</div>}
+            {!loading && cameras.length > 0 && filtered.length === 0 && <div className="empty">Tidak ada kamera untuk filter ini.</div>}
             {filtered.map((c) => (
               <div key={c.id} className={`item ${selected.some((s) => s.id === c.id) ? "active" : ""}`} onClick={() => open(c)}>
                 <div className="name">{c.name}</div>

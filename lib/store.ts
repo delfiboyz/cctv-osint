@@ -1,6 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
 import type { Camera } from "./types";
+import portalsData from "@/data/portals.json";
+import camerasData from "@/data/cameras.json";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const LOCAL_FILE = path.join(DATA_DIR, "cameras.local.json");
@@ -13,10 +15,10 @@ async function readJson<T>(file: string, fallback: T): Promise<T> {
   }
 }
 
+// Data seed di-import (bukan dibaca dari disk) agar ikut terbundel dan tidak bergantung pada folder kerja server.
 export async function readSeed(): Promise<Camera[]> {
-  const portals = await readJson<Omit<Camera, "origin">[]>(path.join(DATA_DIR, "portals.json"), []);
-  const cameras = await readJson<Omit<Camera, "origin">[]>(path.join(DATA_DIR, "cameras.json"), []);
-  return [...portals, ...cameras].map((c) => ({ ...c, origin: "seed" as const }));
+  const seed = [...portalsData, ...camerasData] as Omit<Camera, "origin">[];
+  return seed.map((c) => ({ ...c, origin: "seed" as const }));
 }
 
 export async function readLocal(): Promise<Camera[]> {

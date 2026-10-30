@@ -6,6 +6,11 @@ import type { Camera } from "@/lib/types";
 import { INDONESIA_CENTER } from "@/lib/regions";
 import { TYPE_COLOR, TYPE_LABEL } from "./typeColors";
 
+// Default: tile OpenStreetMap (tanpa API key). Bisa diganti via NEXT_PUBLIC_TILE_URL.
+const TILE_URL = process.env.NEXT_PUBLIC_TILE_URL || "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+const TILE_ATTRIBUTION =
+  process.env.NEXT_PUBLIC_TILE_ATTRIBUTION || '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
 function FlyTo({ target }: { target: { lat: number; lng: number; zoom: number } | null }) {
   const map = useMap();
   useEffect(() => {
@@ -27,10 +32,7 @@ export default function MapView({
 }) {
   return (
     <MapContainer center={INDONESIA_CENTER} zoom={5} minZoom={4} worldCopyJump>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-      />
+      <TileLayer attribution={TILE_ATTRIBUTION} url={TILE_URL} />
       <FlyTo target={flyTarget} />
       {cameras.map((c) => {
         const active = selectedIds.includes(c.id);

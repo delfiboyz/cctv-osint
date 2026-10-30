@@ -4,3 +4,5 @@ next-env.d.ts
 *.tsbuildinfo
 data/cameras.local.json
 .env*.local
+cctv-osint.zip
+cctv-osint.bundle

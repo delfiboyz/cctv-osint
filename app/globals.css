@@ -78,3 +78,4 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .grid { grid-template-columns: 1fr; }
   .stats { display: none; }
 }
+.leaflet-tile-pane { filter: brightness(.75) invert(1) contrast(.9) hue-rotate(200deg) saturate(.4); }

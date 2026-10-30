@@ -1,5 +1,4 @@
-import { promises as fs } from "fs";
-import path from "path";
+import sourcesConfig from "@/config/sources.json";
 import type { Camera, SourceConfig } from "./types";
 import { readLocal, readSeed } from "./store";
 
@@ -17,12 +16,7 @@ export interface SourceStatus {
 const cache = new Map<string, { at: number; cameras: Camera[]; status: SourceStatus }>();
 
 export async function loadSourceConfigs(): Promise<SourceConfig[]> {
-  try {
-    const raw = await fs.readFile(path.join(process.cwd(), "config", "sources.json"), "utf8");
-    return (JSON.parse(raw).sources ?? []) as SourceConfig[];
-  } catch {
-    return [];
-  }
+  return (sourcesConfig.sources ?? []) as SourceConfig[];
 }
 
 function getPath(obj: unknown, p?: string): unknown {
