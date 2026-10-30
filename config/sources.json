@@ -1,0 +1,19 @@
+{
+  "_doc": "Daftar adapter API JSON. Aktifkan dengan enabled=true setelah memverifikasi endpoint publik resmi. Path field memakai notasi titik (mis. 'lokasi.lat').",
+  "sources": [
+    {
+      "id": "contoh-dishub",
+      "enabled": false,
+      "label": "Contoh: API CCTV Dishub (ganti URL)",
+      "url": "https://contoh.dishub.go.id/api/cctv",
+      "itemsPath": "data",
+      "province": "Jawa Tengah",
+      "city": "Kota Semarang",
+      "streamType": "hls",
+      "fields": { "id": "id", "name": "nama", "lat": "latitude", "lng": "longitude", "stream": "url_stream" },
+      "streamTemplate": null,
+      "sourceUrl": "https://contoh.dishub.go.id",
+      "headers": {}
+    }
+  ]
+}

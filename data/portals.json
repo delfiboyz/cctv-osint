@@ -1,0 +1,222 @@
+[
+  {
+    "id": "portal-jakarta-balitower",
+    "name": "Portal CCTV Jakarta (Bali Tower)",
+    "province": "DKI Jakarta",
+    "city": "Jakarta",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "streamType": "portal",
+    "streamUrl": "https://cctv.balitower.co.id",
+    "source": "Bali Tower / Pemprov DKI",
+    "sourceUrl": "https://cctv.balitower.co.id",
+    "tags": [
+      "lalu-lintas",
+      "portal"
+    ]
+  },
+  {
+    "id": "portal-bandung-pelindung",
+    "name": "Pelindung – CCTV Kota Bandung",
+    "province": "Jawa Barat",
+    "city": "Kota Bandung",
+    "lat": -6.9175,
+    "lng": 107.6191,
+    "streamType": "portal",
+    "streamUrl": "https://pelindung.bandung.go.id",
+    "source": "Pemkot Bandung",
+    "sourceUrl": "https://pelindung.bandung.go.id",
+    "tags": [
+      "lalu-lintas",
+      "portal"
+    ]
+  },
+  {
+    "id": "portal-jogja-jss",
+    "name": "CCTV Jogja Smart Service",
+    "province": "DI Yogyakarta",
+    "city": "Kota Yogyakarta",
+    "lat": -7.7956,
+    "lng": 110.3695,
+    "streamType": "portal",
+    "streamUrl": "https://cctvjss.jogjakota.go.id",
+    "source": "Pemkot Yogyakarta",
+    "sourceUrl": "https://cctvjss.jogjakota.go.id",
+    "tags": [
+      "lalu-lintas",
+      "portal"
+    ]
+  },
+  {
+    "id": "portal-surabaya-sits",
+    "name": "Surabaya Intelligent Transport System",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "lat": -7.2575,
+    "lng": 112.7521,
+    "streamType": "portal",
+    "streamUrl": "https://sits.dishub.surabaya.go.id",
+    "source": "Dishub Kota Surabaya",
+    "sourceUrl": "https://sits.dishub.surabaya.go.id",
+    "tags": [
+      "lalu-lintas",
+      "portal"
+    ]
+  },
+  {
+    "id": "portal-jakarta-jakcctv",
+    "name": "CCTV Publik DKI Jakarta (JakCCTV)",
+    "province": "DKI Jakarta",
+    "city": "Jakarta",
+    "lat": -6.1754,
+    "lng": 106.8272,
+    "streamType": "portal",
+    "streamUrl": "https://jakcctv.jakarta.go.id/publik",
+    "source": "Pemprov DKI Jakarta",
+    "sourceUrl": "https://jakcctv.jakarta.go.id/publik",
+    "tags": [
+      "lalu-lintas",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  },
+  {
+    "id": "portal-medan-atcs",
+    "name": "ITS / ATCS Kota Medan",
+    "province": "Sumatera Utara",
+    "city": "Kota Medan",
+    "lat": 3.5952,
+    "lng": 98.6722,
+    "streamType": "portal",
+    "streamUrl": "https://atcsdishub.medan.go.id",
+    "source": "Dishub Kota Medan",
+    "sourceUrl": "https://atcsdishub.medan.go.id",
+    "tags": [
+      "lalu-lintas",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  },
+  {
+    "id": "portal-denpasar-atcs",
+    "name": "ATCS Kota Denpasar",
+    "province": "Bali",
+    "city": "Kota Denpasar",
+    "lat": -8.6705,
+    "lng": 115.2126,
+    "streamType": "portal",
+    "streamUrl": "https://atcs.denpasarkota.go.id/streaming",
+    "source": "Dishub Kota Denpasar",
+    "sourceUrl": "https://atcs.denpasarkota.go.id",
+    "tags": [
+      "lalu-lintas",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  },
+  {
+    "id": "portal-semarang-pantausemar",
+    "name": "Pantau Semar – Peta CCTV Kota Semarang",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang",
+    "lat": -6.9932,
+    "lng": 110.4203,
+    "streamType": "portal",
+    "streamUrl": "https://pantausemar.semarangkota.go.id",
+    "source": "Pemkot Semarang",
+    "sourceUrl": "https://pantausemar.semarangkota.go.id",
+    "tags": [
+      "lalu-lintas",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  },
+  {
+    "id": "portal-semarang-lalin",
+    "name": "Live Streaming ATCS Dishub Semarang",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang",
+    "lat": -6.9667,
+    "lng": 110.4167,
+    "streamType": "portal",
+    "streamUrl": "http://lalin.dishub.semarangkota.go.id",
+    "source": "Dishub Kota Semarang",
+    "sourceUrl": "https://dishub.ppid.semarangkota.go.id/aplikasi-live-streaming-atcs-kota-semarang/",
+    "tags": [
+      "lalu-lintas",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  },
+  {
+    "id": "portal-malang-cctv",
+    "name": "CCTV Kota Malang",
+    "province": "Jawa Timur",
+    "city": "Kota Malang",
+    "lat": -7.9666,
+    "lng": 112.6326,
+    "streamType": "portal",
+    "streamUrl": "https://cctv.malangkota.go.id",
+    "source": "Pemkot Malang",
+    "sourceUrl": "https://cctv.malangkota.go.id",
+    "tags": [
+      "lalu-lintas",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  },
+  {
+    "id": "portal-pontianak-dishub",
+    "name": "CCTV Dishub Pontianak (YouTube resmi)",
+    "province": "Kalimantan Barat",
+    "city": "Kota Pontianak",
+    "lat": -0.0263,
+    "lng": 109.3425,
+    "streamType": "portal",
+    "streamUrl": "https://pontianak.go.id/pontianak-hari-ini/berita/Pantau-Kondisi-Lalu-Lintas,-Warga-Bisa-Akses-Link-Youtube-Dishub-Pontianak",
+    "source": "Dishub Kota Pontianak",
+    "sourceUrl": "https://www.pontianak.go.id/pontianak-hari-ini/berita/Dishub-Pontianak-Tambah-Titik-Lokasi-CCTV",
+    "tags": [
+      "lalu-lintas",
+      "portal",
+      "perlu-verifikasi",
+      "youtube"
+    ]
+  },
+  {
+    "id": "portal-nasional-binamarga-tol",
+    "name": "CCTV Jalan Tol Nasional (Bina Marga)",
+    "province": "DKI Jakarta",
+    "city": "Jalan Tol (nasional)",
+    "lat": -6.2297,
+    "lng": 106.8003,
+    "streamType": "portal",
+    "streamUrl": "https://binamarga.pu.go.id/contents/cctv_tol",
+    "source": "Ditjen Bina Marga PUPR",
+    "sourceUrl": "https://binamarga.pu.go.id/contents/cctv_tol",
+    "tags": [
+      "jalan-tol",
+      "nasional",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  },
+  {
+    "id": "portal-nasional-bpjt-tol",
+    "name": "CCTV Jalan Tol (BPJT)",
+    "province": "DKI Jakarta",
+    "city": "Jalan Tol (nasional)",
+    "lat": -6.235,
+    "lng": 106.81,
+    "streamType": "portal",
+    "streamUrl": "https://bpjt.pu.go.id/cctv/",
+    "source": "BPJT PUPR",
+    "sourceUrl": "https://bpjt.pu.go.id/cctv/",
+    "tags": [
+      "jalan-tol",
+      "nasional",
+      "portal",
+      "perlu-verifikasi"
+    ]
+  }
+]
