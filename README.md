@@ -60,6 +60,3 @@ Cara menemukan endpoint: buka portal CCTV resmi, lalu DevTools → Network → f
 | GET | `/api/regions` | Jumlah kamera per provinsi/kota |
 | GET | `/api/status?id=` | Cek keterjangkauan feed |
 | GET | `/api/proxy?url=` | Proxy feed (host terdaftar saja) |
-
-## Etika & hukum
-Gunakan hanya feed yang **sengaja dipublikasikan** oleh pemiliknya. Jangan menambahkan kamera privat, kamera yang terbuka karena kata sandi default/salah konfigurasi, atau memakai aplikasi ini untuk menguntit individu. Mengakses sistem tanpa hak dapat melanggar UU ITE (Pasal 30) dan UU PDP. Hormati ketentuan layanan tiap portal, jangan membebani server sumber (cache sudah diaktifkan), dan cantumkan atribusi sumber.
